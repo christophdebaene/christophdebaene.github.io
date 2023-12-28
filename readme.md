@@ -1,1 +1,1 @@
-[My Site](https://christophdebaene.github.io/)
+[My Personal Site](https://christophdebaene.github.io/)
