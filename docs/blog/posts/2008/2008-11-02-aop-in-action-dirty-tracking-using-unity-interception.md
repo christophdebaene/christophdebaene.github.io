@@ -1,5 +1,5 @@
 ---
-title: AOP in Action – Part 1 - Dirty Tracking using Unity Interception
+title: AOP in Action - Dirty Tracking using Unity Interception
 date: 2008-11-02
 tags: 
   - patterns-practices

@@ -1,5 +1,5 @@
 ---
-title: AOP in Action – Part 2 - Dirty Tracking using Mixins with Castle’s DynamicProxy
+title: AOP in Action - Dirty Tracking using Mixins with Castle’s DynamicProxy
 date: 2009-01-09
 tags: 
   - patterns-practices
