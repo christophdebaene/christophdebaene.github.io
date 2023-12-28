@@ -84,7 +84,25 @@ nav:
     - blog/tags.md  
 
 extra:
+  analytics:
+    provider: google
+    property: G-JSKY46D2Q7
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
   social:
+    - icon: material/rss-box
+      link: 'https://christophdebaene.github.io/feed_rss_created.xml'
     - icon: material/twitter
       link: 'https://twitter.com/ChrisDeBaene'
     - icon: material/github

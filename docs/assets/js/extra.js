@@ -1,7 +1,8 @@
 const excludes = [
     'https://github.com/christophdebaene/christophdebaene.github.io',
     'https://twitter.com/ChrisDeBaene',
-    'https://github.com/christophdebaene'
+    'https://github.com/christophdebaene',
+    'https://christophdebaene.github.io/feed_rss_created.xml'
 ];
 
 function iconlink()
