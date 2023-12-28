@@ -1,0 +1,6 @@
+Setting;File size;Remark
+WAV;721 MB; lossless, uncompressed
+FLAC;405 MB; losless, level 9 (highest)
+LAME -b 320; 163 MB; lossy, CBR 320, highest possible quality
+LAME -V 0; 105 MB; lossy, VBR
+LAME -V 0 --vbr-new; 102 MB; lossy, VBR but another algorithm (better quality and smaller)

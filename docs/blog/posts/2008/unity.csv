@@ -1,0 +1,3 @@
+Method, Default Lifetime, Explanation
+RegisterType, Transient Lifetime, Container will create a new instance on each call to Resolve
+RegisterInstance, Container-controller lifetime, Instance has the lifetime of the container

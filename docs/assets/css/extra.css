@@ -1,0 +1,16 @@
+.md-header {
+    background: linear-gradient(90deg, rgba(34,33,87,1) 0%, rgba(80,80,80,1) 100%);
+}
+
+.md-social__link {
+    width: 2rem;
+}
+.md-social__link svg {
+    max-height: 1.6rem;
+}
+
+.iconlink {    
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+}
