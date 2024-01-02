@@ -7,18 +7,21 @@ repo_name: christophdebaene/christophdebaene.github.io
 repo_url: https://github.com/christophdebaene/christophdebaene.github.io
 edit_uri: ""
 
-copyright: "Copyright &copy; 2004-2023 Christoph De Baene"
+copyright: "Copyright &copy; 2004-2024 Christoph De Baene"
 
 theme:
   language: en
   name: material  
+  font:
+    text: Poppins
+    code: Roboto Mono
   icon: 
     logo: material/book-open-page-variant  
   palette:
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode    
+        name: Switch to dark mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny

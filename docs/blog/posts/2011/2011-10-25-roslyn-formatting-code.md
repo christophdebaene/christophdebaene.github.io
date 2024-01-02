@@ -10,7 +10,7 @@ tags:
 
 In this post we are investigating [source code formatting](http://en.wikipedia.org/wiki/Prettyprint). Inside my projects I use as much as possible code generation and whether it is coming from T4 templates or some other mechanism, there is usually the need to format your code in a consistent way.
 
-Inside Roslyn we can use the _SyntaxTree_ class that resides in the _Roslyn.Compilers.CSharp_ namespace to parse a text file (that contains C# of VB code). And after we can use the _Format_ extension method that resides in the _CompilationUnitSyntax_ class to reformat your code.
+Inside Roslyn we can use the _SyntaxTree_ class that resides in the `Roslyn.Compilers.CSharp` namespace to parse a text file (that contains C# of VB code). And after we can use the `Format` extension method that resides in the `CompilationUnitSyntax` class to reformat your code.
 
 ```csharp
 var code = File.ReadAllText("Sample.cs");
@@ -19,9 +19,9 @@ var root = (CompilationUnitSyntax)tree.Root;
 var formattedCode = root.Format().GetFullText();
 ```
 
-Take for example the code fragment below (_Sample.cs_) which is totally unformatted.
+Take for example the code fragment below which is totally unformatted.
 
-```csharp
+```csharp title="sample.cs"
 namespace Domain
 {
 using System;
@@ -82,7 +82,7 @@ new HashSet(value);
 }
 ```
 
-When passing the code fragment through the _SyntaxTree_ and calling the _Format_ extension method you get the following result which is formatted correctly. 
+When passing the code fragment through the `SyntaxTree` and calling the `Format` extension method you get the following result which is formatted correctly. 
 
 ```csharp
 namespace Domain
@@ -133,7 +133,7 @@ namespace Domain
 }
 ```
 
-Note that when you are using for example lambda expressions or delegates that the formatter will add unnecessary newlines and whitespaces. Take for example the following code fragment after calling the _Format_ method.
+Note that when you are using for example lambda expressions or delegates that the formatter will add unnecessary newlines and whitespaces. Take for example the following code fragment after calling the `Format` method.
 
 ```csharp
 public void SomeMethod()
@@ -154,7 +154,7 @@ public void SomeMethod()
 
 Thankfully we have everything in control through the APIs and we can rewrite the expression (like the _Format_ extension method is doing).
 
-For that we need to create a class inheriting from _SyntaxRewriter_ that resides in the _Roslyn.Compilers.CSharp_ namespace and implements the [Visitor pattern](http://en.wikipedia.org/wiki/Visitor_pattern).
+For that we need to create a class inheriting from _SyntaxRewriter_ that resides in the `Roslyn.Compilers.CSharp` namespace and implements the [Visitor pattern](http://en.wikipedia.org/wiki/Visitor_pattern).
 
 ```csharp
 public class CodeBeautifier: SyntaxRewriter
@@ -201,9 +201,9 @@ public class CodeBeautifier: SyntaxRewriter
 }
 ```
 
-Note that I am visiting the syntax tokens, these are the terminals of the language grammar (representing the smallest syntactic fragments) and investigating the current kind of token with the next or previous kind of token. Syntax Trivia represents the parts such as whitespace, comments and preprocessor directives. Inside the _VisitToken_ method I am replacing the syntax trivia parts.
+Note that I am visiting the syntax tokens, these are the terminals of the language grammar (representing the smallest syntactic fragments) and investigating the current kind of token with the next or previous kind of token. Syntax Trivia represents the parts such as whitespace, comments and preprocessor directives. Inside the `VisitToken` method I am replacing the syntax trivia parts.
 
-To use the _CodeBeautifier_ class you need to simply create an instance of it and using the _Visit_ method to pass your node.
+To use the `CodeBeautifier` class you need to simply create an instance of it and using the `Visit` method to pass your node.
 
 ```csharp
 var code = File.ReadAllText("Sample.cs");

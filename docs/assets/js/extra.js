@@ -10,7 +10,7 @@ function iconlink()
     const links = document.getElementsByTagName("a");
             
     for (const link of links) {
-                        
+                                
         const href = link.getAttribute("href");
         if (href && href.startsWith("http") && link.hostname !== location.hostname && !excludes.includes(href))
         {                           
@@ -29,5 +29,5 @@ function iconlink()
 }
 
 window.addEventListener("DOMContentLoaded", function() {
-    iconlink();    
+    iconlink();
 });

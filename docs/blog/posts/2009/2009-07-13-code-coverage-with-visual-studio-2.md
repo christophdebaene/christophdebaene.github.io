@@ -10,8 +10,13 @@ Code coverage is used to determine how effectively your tests exercise the code 
 
 Visual Studio uses 2 different types of analysis, block-based statement coverage (C1 coverage) and line-based coverage.
 
-- **Block-based statement coverage**A block is defined as a sequence of instructions that have a single entry point and a single exit point. Exit points include branch instructions, a function call, a return instruction, or, for managed code, a throw instruction.
-- **Line-based coverage**For line-based coverage, the tools identify all of the blocks that make up a line and then use this information to determine the level of coverage for the line. If all of the blocks that make up the line are covered, then the tools report that the line is covered. If no blocks in the line are covered, then the tools report that the line is not covered. If some, but not all, of the blocks in the line are covered, then the tools report that the line is partially covered.
+- **Block-based statement coverage**
+
+      A block is defined as a sequence of instructions that have a single entry point and a single exit point. Exit points include branch instructions, a function call, a return instruction, or, for managed code, a throw instruction.
+
+- **Line-based coverage**
+
+      For line-based coverage, the tools identify all of the blocks that make up a line and then use this information to determine the level of coverage for the line. If all of the blocks that make up the line are covered, then the tools report that the line is covered. If no blocks in the line are covered, then the tools report that the line is not covered. If some, but not all, of the blocks in the line are covered, then the tools report that the line is partially covered.
 
 Take for example the following class that reside in MyProject.BusinessLogic assembly
 
@@ -63,9 +68,9 @@ From the results we notice that we don't have 100% code coverage because our uni
 
 ![CodeCoverageColoring_2](images/codecoveragecoloring_2.jpg)
 
-- Light Blue: Indicates that the entire line of code was exercised in the test run.
-- Beige: Indicates that only a portion of the code blocks within the line of code were exercised in the test run.
-- Reddish Brown: Indicates that the line was not exercised in the test run.
+- **Light Blue:** Indicates that the entire line of code was exercised in the test run.
+- **Beige:** Indicates that only a portion of the code blocks within the line of code were exercised in the test run.
+- **Reddish Brown:** Indicates that the line was not exercised in the test run.
 
 Code coverage inside Visual Studio uses [statement coverage](http://en.wikipedia.org/wiki/Code_coverage) and in this case the number of IL instructions reached is taken into account. If we add some statements in the Foo class and run again our code coverage we notice that the coverage has been raised form 71,43% to 92,59%. It's important to notice, that when you refactor your class it influences the code coverage even when the contract of the class is the same! This is very different from [Branch coverage](http://en.wikipedia.org/wiki/Code_coverage) where each control structure is evaluated to true and false. In this case we would have 50% code coverage.
 

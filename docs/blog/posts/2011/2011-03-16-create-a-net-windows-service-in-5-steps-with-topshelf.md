@@ -9,9 +9,9 @@ tags:
 
 First download Topshelf from GitHub, I used version 2.2 ([direct link](https://github.com/downloads/Topshelf/Topshelf/Topshelf.v2.2.0.0.zip)).
 
-1. Create a **console application** named '_SampleWindowsService_' inside Visual Studio - Be sure to change the target framework to '_.NET Framework 4_'
-2. **Reference** the **binaries** _TopShelf.dll_ and _log4net.dll_ (included in Topshelf).
-3. **Create** a simple **service** called 'SampleService' that simply write every 5 seconds to the log. Note that we create explicit a _Start_ and _Stop_ method which is conceptually the minimum that a windows service need.
+1. Create a **console application** named `SampleWindowsService` inside Visual Studio - Be sure to change the target framework to .NET Framework 4
+2. **Reference** the **binaries** `TopShelf.dll` and `log4net.dll` (included in Topshelf).
+3. **Create** a simple **service** called 'SampleService' that simply write every 5 seconds to the log. Note that we create explicit a `Start` and `Stop` method which is conceptually the minimum that a windows service need.
 
     ```csharp
     public class SampleService
