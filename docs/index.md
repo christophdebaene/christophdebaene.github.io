@@ -1,5 +1,5 @@
 # Home
 
-Welcome to my personal website and blog.
+Welcome to my personal website and blog
 
 

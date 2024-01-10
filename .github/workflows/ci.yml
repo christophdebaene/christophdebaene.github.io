@@ -22,7 +22,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: |
-          pip install mkdocs-material
-          pip install mkdocs-rss-plugin
-          pip install mkdocs-table-reader-plugin
+          pip install -r requirements.txt
       - run: mkdocs gh-deploy --force

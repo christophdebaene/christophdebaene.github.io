@@ -7,11 +7,12 @@ repo_name: christophdebaene/christophdebaene.github.io
 repo_url: https://github.com/christophdebaene/christophdebaene.github.io
 edit_uri: ""
 
-copyright: "Copyright &copy; 2004-2024 Christoph De Baene"
+copyright: "Copyright &copy; 2024 Christoph De Baene"
 
 theme:
-  language: en
+  language: en  
   name: material  
+  custom_dir: overrides
   font:
     text: Poppins
     code: Roboto Mono
@@ -30,6 +31,9 @@ theme:
     - navigation.indexes
     - navigation.footer    
     - navigation.instant
+    - navigation.tabs
+    - navigation.prune
+    - navigation.sections    
     - navigation.instant.progress
     - content.code.copy
     - content.code.select
@@ -40,6 +44,7 @@ plugins:
   - tags:
       tags_file: blog/tags.md
   - blog:            
+      blog_toc: true
       post_url_format: "{slug}"
       post_excerpt: optional
       post_date_format: long
@@ -86,12 +91,18 @@ nav:
   - Blog: 
     - blog/index.md
     - blog/tags.md
-
+  - Wiki:
+    - wiki/windows.md
+    - wiki/javascript.md
+    - wiki/python.md
+    - wiki/typescript.md
+  - disclaimer.md
+  
 extra:
   analytics:
     provider: google
     property: G-JSKY46D2Q7
-    
+      
   social:
     - icon: material/rss-box
       link: 'https://christophdebaene.github.io/feed_rss_created.xml'
