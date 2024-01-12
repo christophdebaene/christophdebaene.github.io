@@ -1,3 +1,4 @@
 mkdocs-material
 mkdocs-rss-plugin
 mkdocs-table-reader-plugin
+mkdocs-macros-plugin

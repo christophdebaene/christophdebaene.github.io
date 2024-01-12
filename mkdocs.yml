@@ -14,7 +14,7 @@ theme:
   name: material  
   custom_dir: overrides
   font:
-    text: Poppins
+    text: Roboto
     code: Roboto Mono
   icon: 
     logo: material/book-open-page-variant  
@@ -39,8 +39,9 @@ theme:
     - content.code.select
 
 plugins:
-  - search
+  - search  
   - table-reader
+  - macros
   - tags:
       tags_file: blog/tags.md
   - blog:            
@@ -99,6 +100,7 @@ nav:
   - disclaimer.md
   
 extra:
+  unit_price: 10
   analytics:
     provider: google
     property: G-JSKY46D2Q7
