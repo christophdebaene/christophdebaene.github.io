@@ -103,7 +103,7 @@ extra:
   unit_price: 10
   analytics:
     provider: google
-    property: G-JSKY46D2Q7
+    property: G-ZVEYRCMQQP
       
   social:
     - icon: material/rss-box
