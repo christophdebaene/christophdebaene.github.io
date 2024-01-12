@@ -92,11 +92,11 @@ nav:
   - Blog: 
     - blog/index.md
     - blog/tags.md
-  - Wiki:
-    - wiki/windows.md
-    - wiki/javascript.md
-    - wiki/python.md
-    - wiki/typescript.md
+  - Cheat Sheet:
+    - cheat-sheet/windows.md
+    - cheat-sheet/javascript.md
+    - cheat-sheet/python.md
+    - cheat-sheet/typescript.md
   - disclaimer.md
   
 extra:
