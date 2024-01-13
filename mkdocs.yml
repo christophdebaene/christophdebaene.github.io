@@ -91,13 +91,15 @@ nav:
   - index.md
   - Blog: 
     - blog/index.md
-    - blog/tags.md
+    - blog/tags.md  
   - Cheat Sheet:
-    - cheat-sheet/windows.md
+    - cheat-sheet/windows/windows.md
     - cheat-sheet/javascript.md
     - cheat-sheet/python.md
     - cheat-sheet/typescript.md
   - disclaimer.md
+  - Blog 2004-2014 (Archived):
+    - blog2004
   
 extra:
   unit_price: 10
