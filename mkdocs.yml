@@ -11,7 +11,7 @@ copyright: "Copyright &copy; 2024 Christoph De Baene"
 
 theme:
   language: en  
-  name: material  
+  name: material    
   custom_dir: overrides
   font:
     text: Roboto
@@ -41,13 +41,16 @@ theme:
 plugins:
   - search  
   - table-reader
+  - glightbox:
+      effect: zoom
   - macros
   - tags:
       tags_file: blog/tags.md
-  - blog:            
+  - blog:
       blog_toc: true
       post_url_format: "{slug}"
       post_excerpt: optional
+      post_excerpt_separator: <!-- more -->
       post_date_format: long
       post_url_date_format: yyyy/MM/dd
       archive: true      
@@ -59,6 +62,9 @@ plugins:
       categories:
         - categories
         - tags 
+  - redirects:
+      redirect_maps:
+        'index.md': 'blog/index.md'
 
 markdown_extensions:
   - attr_list
@@ -87,8 +93,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-nav:
-  - index.md
+nav:  
   - Blog: 
     - blog/index.md
     - blog/tags.md  
@@ -98,7 +103,7 @@ nav:
     - cheat-sheet/python.md
     - cheat-sheet/typescript.md
   - disclaimer.md
-  - Blog 2004-2014 (Archived):
+  - Blog 2004-2014:
     - blog2004
   
 extra:

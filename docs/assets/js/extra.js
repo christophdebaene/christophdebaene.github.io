@@ -12,14 +12,14 @@ function iconlink()
     for (const link of links) {
                                 
         const href = link.getAttribute("href");
-        if (href && href.startsWith("http") && link.hostname !== location.hostname && !excludes.includes(href))
+        if (href && href.startsWith("https") && link.hostname !== location.hostname && !excludes.includes(href))
         {                           
             link.target = "_blank";
             link.rel = "noopener";
             
             const img = document.createElement("img");
             img.src = "https://www.google.com/s2/favicons?domain=" + href;
-            img.className = "iconlink";
+            img.className = "icon-link";
             img.width = 16;
             img.height = 16;
             
