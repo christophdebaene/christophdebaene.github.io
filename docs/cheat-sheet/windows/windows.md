@@ -8,7 +8,7 @@
 2. In the `Create Shortcut` window type
 
     `#!batch %windir%\System32\rundll32.exe sysdm.cpl,EditEnvironmentVariables`
-    ![Create Shortcut](./assets/create-shortcut.png)
+    ![Create Shortcut](./assets/images/create-shortcut.png)
 
 3. Click `Next` and give it a name like `Environment Variables`
-    ![Create Shortcut](./assets/create-shortcut-name.png)
+    ![Create Shortcut](./assets/images/create-shortcut-name.png)
