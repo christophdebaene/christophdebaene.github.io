@@ -1,6 +1,7 @@
 ---
 title: A fresh start
 date: 2024-01-15
+comments: true
 ---
 
 After 10 years, I have decided to resume **blogging** about my passion for technology and to share my experiences.

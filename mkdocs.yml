@@ -75,7 +75,10 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.keys
   - pymdownx.tasklist
+  - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets
   - pymdownx.highlight:
       guess_lang: true
