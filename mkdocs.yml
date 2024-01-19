@@ -31,10 +31,10 @@ theme:
     - navigation.indexes
     - navigation.footer    
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
     - navigation.prune
     - navigation.sections    
-    - navigation.instant.progress
     - content.code.copy
     - content.code.select
 
@@ -122,6 +122,9 @@ extra:
 
   
 extra_javascript:
-    - assets/js/extra.js
+    - assets/js/favicons.config.js
+    - assets/js/favicons.js
+    
 extra_css:
-    - assets/css/extra.css
+    - assets/css/favicons.css
+    - assets/css/site.css
