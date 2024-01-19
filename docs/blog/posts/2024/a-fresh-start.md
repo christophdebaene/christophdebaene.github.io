@@ -4,8 +4,7 @@ date: 2024-01-15
 comments: true
 ---
 
-After 10 years, I have decided to resume **blogging** about my passion for technology and to share my experiences.
-Additionally, I use this site as my personal **wiki** to document things that I use daily basis as a technical consultant.
+After a decade-long hiatus, I've made the decision to revive my **blog** about my passion for technology and to share my experiences. Moreover, this site serves as my personal **wiki**, a digital repository where I document the tools and insights integral to my daily life as a technical consultant."
 
 <!-- more -->
 
