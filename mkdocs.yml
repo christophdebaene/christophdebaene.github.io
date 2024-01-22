@@ -67,7 +67,7 @@ plugins:
         - tags 
   - redirects:
       redirect_maps:
-        #'index.md': 'blog/index.md'
+        'index.md': 'blog/index.md'
 
 markdown_extensions:
   - attr_list
