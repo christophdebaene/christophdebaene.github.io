@@ -1,5 +1,6 @@
-const faviconsConfig = 
+const linkFaviconConfig = 
 {
+    provider: 'Google',
     openInNewWindow: true,
     iconsPath: '/assets/icons',
     icons: {

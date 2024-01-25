@@ -16,6 +16,17 @@ function addFavicon(config, link) {
     if (config.openInNewWindow) {
         link.target = "_blank";
         link.rel = "noopener";
+    } 
+}
+
+function getFaviconProvider(provider, link) {
+
+    switch(provider) {
+        case 'Google': `https://www.google.com/s2/favicons?domain=${link.href}&sz=16`;
+        case 'DuckDuckGo': `https://icons.duckduckgo.com/ip3/${link.href}.ico`;
+        case 'IconHorse': `https://icon.horse/${link.href}`;
+        default: 
+            return `https://www.google.com/s2/favicons?domain=${link.href}&sz=16`;
     }
 }
 
@@ -33,7 +44,7 @@ function getFaviconUrl(config, link) {
         }
     }
 
-    return `https://www.google.com/s2/favicons?domain=${link.href}&sz=16`;
+    return getFaviconProvider(config.provider, link);
 }
 
 function addFavicons(config) {
@@ -41,13 +52,16 @@ function addFavicons(config) {
     var links = document.querySelectorAll('.md-content a[href*="://"]');
     for (const link of links) {
         if (!config.excludes.some(x => link.href.startsWith(x))) {
-            addFavicon(config, link);
+            
+            if (!link.querySelector('img')) {
+                addFavicon(config, link);
+            }
         }
     }
 }
 
 if (typeof document$ !== "undefined") {
     document$.subscribe(function () {        
-        addFavicons(faviconsConfig);
+        addFavicons(linkFaviconConfig);
     })
 }

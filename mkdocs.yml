@@ -67,7 +67,7 @@ plugins:
         - tags 
   - redirects:
       redirect_maps:
-        'index.md': 'blog/index.md'
+        #'index.md': 'blog/index.md'
 
 markdown_extensions:
   - attr_list
@@ -80,6 +80,9 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.snippets
@@ -101,13 +104,10 @@ markdown_extensions:
 
 nav:  
   - Blog: 
-    - blog/index.md
-    - blog/tags.md  
+    - blog/index.md    
+  - Tags: blog/tags.md
   - Cheat Sheet:
-    - cheat-sheet/windows/windows.md
-    - cheat-sheet/javascript.md
-    - cheat-sheet/python.md
-    - cheat-sheet/typescript.md
+    - cheat-sheet/windows/windows.md    
   - disclaimer.md
   - Blog 2004-2014:
     - blog2004
@@ -128,9 +128,9 @@ extra:
 
   
 extra_javascript:
-    - assets/js/favicons.config.js
-    - assets/js/favicons.js
+    - assets/js/link-favicon.config.js
+    - assets/js/link-favicon.js
     
 extra_css:
-    - assets/css/favicons.css
+    - assets/css/link-favicon.css
     - assets/css/site.css
