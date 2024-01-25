@@ -9,6 +9,7 @@ const linkFaviconConfig =
         'github'    : 'github.svg'
     },
     excludes: [
+        'https://christophdebaene.be',
         'https://www.google.com/s2/favicons'
     ],
 };
