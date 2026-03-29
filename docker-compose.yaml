@@ -1,0 +1,12 @@
+services:
+  mkdocs:
+    container_name: mkdocs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/docs
+    working_dir: /docs
+    command: mkdocs serve --dev-addr=0.0.0.0:8000 --livereload

@@ -11,11 +11,11 @@ copyright: "Copyright &copy; 2024 Christoph De Baene"
 
 theme:
   language: en  
-  name: material    
+  name: material
   custom_dir: overrides
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Merrywheather Sans
+    code: JetBrains Mono
   icon: 
     logo: material/book-open-page-variant  
   palette:
@@ -37,18 +37,20 @@ theme:
     - navigation.sections    
     - content.code.copy
     - content.code.select
+    - content.code.annotate
 
 watch:
   - overrides/
 
 plugins:
-  - search  
-  - table-reader
-  - glightbox:
-      effect: zoom
+  - search
   - macros
-  - tags:
-      tags_file: blog/tags.md
+  - table-reader
+  - tags
+  - glightbox:
+      manual: false
+      effect: zoom
+      zoomable: true
   - blog:
       blog_toc: true
       post_url_format: "{slug}"
@@ -67,7 +69,7 @@ plugins:
         - tags 
   - redirects:
       redirect_maps:
-        #'index.md': 'blog/index.md'
+        #'index.md': 'blog/index.md'  
 
 markdown_extensions:
   - attr_list
@@ -96,18 +98,28 @@ markdown_extensions:
           lang: php
           options:
             startinline: true
+        - name: docker-shell
+          lang: shell-session
+          options:
+            prompt: "$"
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-nav:  
+nav:
   - Blog: 
-    - blog/index.md    
+    - blog/index.md
   - Tags: blog/tags.md
   - Cheat Sheet:
-    - cheat-sheet/windows/windows.md    
+    - cheat-sheet/docker.md
+    - cheat-sheet/docker-compose.md
+    - cheat-sheet/ollama.md
+    - cheat-sheet/windows/windows.md
+    - cheat-sheet/synology.md
+    - cheat-sheet/linux.md
+    - cheat-sheet/proxmox.md  
   - disclaimer.md
   - Blog 2004-2014:
     - blog2004
@@ -130,7 +142,9 @@ extra:
 extra_javascript:
     - assets/js/link-favicon.config.js
     - assets/js/link-favicon.js
+    - assets/js/highlight-keywords.js
     
 extra_css:
     - assets/css/link-favicon.css
-    - assets/css/site.css
+    - assets/css/site.css 
+    - assets/css/keywords.css

@@ -6,7 +6,7 @@ hide:
 
 # christophdebaene.be
 
-<div class="grid cards" markdown>
+<div class="grid cards" markdown> 
 
 -   :fontawesome-solid-circle-info: __About Me__
 
