@@ -1,0 +1,25 @@
+code em {
+  color: #E91E63; /* A common accent color in Material Design */
+  font-style: italic;
+}
+
+.cli-keyword {
+  color: #2496ED;
+  font-weight: bold;
+}
+
+.cli-keyword2 {
+  color: #9C27B0; /* Purple (Example) */
+  font-weight: bold;
+}
+
+/* Custom style for CLI options/arguments */
+.cli-option {
+  color: #4CAF50; /* A pleasant Material Design green */
+}
+
+/* Custom style for other words in code blocks */
+.cli-word {
+  color: #747474; /* A clear, dark grey from the Material palette */
+  font-weight: bold;
+}
