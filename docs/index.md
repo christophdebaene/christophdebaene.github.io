@@ -17,16 +17,18 @@ hide:
     My interests revolve around architecture, patterns and principles, artificial intelligence, code-generation, etc. I am dedicated to consistently achieving  elegance and simplicity in code.
 
     ---
-
-    ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=christophdebaene&layout=compact)
+    
+    ![Top Langs](https://github-stats-extended.vercel.app/api/top-langs?username=christophdebaene&layout=compact)
         
 -  :fontawesome-brands-github: __Projects__
 
     ---    
 
-    [![DiscogsConnect](https://github-readme-stats.vercel.app/api/pin/?username=christophdebaene&repo=DiscogsConnect)](https://github.com/christophdebaene/DiscogsConnect)
+    [![Pragmatic Architecture](https://github-stats-extended.vercel.app/api/pin/?username=christophdebaene&repo=PragmaticArchitecture)](https://github.com/christophdebaene/PragmaticArchitecture)
 
-    [![mkdocs-link-favicon](https://github-readme-stats.vercel.app/api/pin/?username=christophdebaene&repo=mkdocs-link-favicon)](https://github.com/christophdebaene/mkdocs-link-favicon)
+    [![DiscogsConnect](https://github-stats-extended.vercel.app/api/pin/?username=christophdebaene&repo=DiscogsConnect)](https://github.com/christophdebaene/DiscogsConnect)
+
+    [![mkdocs-link-favicon](https://github-stats-extended.vercel.app/api/pin/?username=christophdebaene&repo=mkdocs-link-favicon)](https://github.com/christophdebaene/mkdocs-link-favicon)
     
 </div>
 
